@@ -1,4 +1,5 @@
 ﻿using DATABASEE.Context;
+using DATABASEE.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace DATABASEE.Repository
 {
-     public  class Repository<T> : IRepository<T> where T : BaseModel
+     public  class Repository<T> : IRepository<T> where T : BaseModels
+
      {
 
         private readonly ApplicationDbContext _context;

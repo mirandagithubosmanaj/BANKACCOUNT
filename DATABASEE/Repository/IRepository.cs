@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace DATABASEE.Repository
 {
-    public interface IRepository<T> where T : BaseModel
+    public interface IRepository<T> where T : BaseModels
+
     {
         Task<T?> Get(int id, CancellationToken token);
 
