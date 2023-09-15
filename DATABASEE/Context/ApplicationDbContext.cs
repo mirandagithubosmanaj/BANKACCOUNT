@@ -16,7 +16,7 @@ namespace DATABASEE.Context
         }
 
         // Për të përdorur tabelën "Deposits"
-        public DbSet<Deposits> Deposits { get; set; }
+        //public DbSet<Deposits> Deposits { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

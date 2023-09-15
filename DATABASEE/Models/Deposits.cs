@@ -12,10 +12,11 @@ namespace DATABASEE.Models
     {
 
         [Required]
-        public string? Amount { get; set; }
+        public float Amount { get; set; }
 
         [Required]
-        public string? Transfer_Date { get; set; }
+        public DateTime Transfer_Date { get; set; }
+
 
     }
 }
