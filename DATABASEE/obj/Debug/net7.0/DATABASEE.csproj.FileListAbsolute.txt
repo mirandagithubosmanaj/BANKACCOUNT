@@ -10,3 +10,15 @@ C:\Users\IsoCom\Desktop\DATABASEE\obj\Debug\net7.0\DATABASEE.dll
 C:\Users\IsoCom\Desktop\DATABASEE\obj\Debug\net7.0\refint\DATABASEE.dll
 C:\Users\IsoCom\Desktop\DATABASEE\obj\Debug\net7.0\DATABASEE.pdb
 C:\Users\IsoCom\Desktop\DATABASEE\obj\Debug\net7.0\ref\DATABASEE.dll
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\bin\Debug\net7.0\DATABASEE.deps.json
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\bin\Debug\net7.0\DATABASEE.dll
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\bin\Debug\net7.0\DATABASEE.pdb
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\obj\Debug\net7.0\DATABASEE.csproj.AssemblyReference.cache
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\obj\Debug\net7.0\DATABASEE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\obj\Debug\net7.0\DATABASEE.AssemblyInfoInputs.cache
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\obj\Debug\net7.0\DATABASEE.AssemblyInfo.cs
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\obj\Debug\net7.0\DATABASEE.csproj.CoreCompileInputs.cache
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\obj\Debug\net7.0\DATABASEE.dll
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\obj\Debug\net7.0\refint\DATABASEE.dll
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\obj\Debug\net7.0\DATABASEE.pdb
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\DATABASEE\obj\Debug\net7.0\ref\DATABASEE.dll

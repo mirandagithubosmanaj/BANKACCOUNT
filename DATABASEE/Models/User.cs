@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DATABASEE.Models
 {
-    public class Users : BaseModels
+    public class User : BaseModels
     {
         [Required]
         public string? Username { get; set; }
@@ -22,8 +22,8 @@ namespace DATABASEE.Models
         [Required]
         public string? Balance { get; set; }
 
-        [ForeignKey("User_Roles/Role_Id")]
-        public string? User_Roles { get; set; }
+        [ForeignKey("UserRoles/RoleID")]
+        public string? UserRoles { get; set; }
 
 
              
