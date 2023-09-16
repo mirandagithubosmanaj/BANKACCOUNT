@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace DATABASEE.Models
 {
-    public class Transfers : BaseModels
+    public class Transfer : BaseModels
     {
 
-        [ForeignKey("Users/Account_Number")]
+        [ForeignKey("User/Account_Number")]
         public string? Sender_Account { get; set; }
 
-        [ForeignKey("Users/ Account_Number")]
+        [ForeignKey("User/ Account_Number")]
         public string? Receiver_Account { get; set; }
 
         [Required]
