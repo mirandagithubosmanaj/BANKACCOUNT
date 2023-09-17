@@ -8,18 +8,20 @@ using System.Threading.Tasks;
 
 namespace DATABASEE.Models
 {
-    public class Withdraws : BaseModels
+    public class Transfers : BaseModels
     {
 
-
         [ForeignKey("Users/ Id")]
-        public int User { get; set; }
+        public int Sender_account { get; set; }
+
+        [ForeignKey("User/ Id")]
+        public int Receiver_account { get; set; }
 
         [Required]
-        public float Amount { get; set; }
+        public float Amount { get; set;}
 
         [Required]
-        public DateTime Withdraw_date { get; set; }
+        public DateTime Transfer_date { get; set; }
 
 
     }

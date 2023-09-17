@@ -11,7 +11,7 @@ create table User_roles (
 	Id int primary key identity(1,1),
 	Role_name varchar(20),
 )
-
+--edhe kjo u kry ne VS
 create table Users (
 	Id int primary key identity(1,1),
 	Username varchar(255) unique,
@@ -21,7 +21,7 @@ create table Users (
 	User_role int foreign key references User_roles(Id),
 	Created_date datetime default getDate()
 )
-
+--edhe kjo u kry 
 create table Transfers (
 	Id int primary key identity(1,1),
 	Sender_account int foreign key references Users(Id),
@@ -29,14 +29,14 @@ create table Transfers (
 	Amount float,
 	Transfer_date datetime default getDate()
 )
-
+-- u kry deposita ne VS
 create table Deposits (
 	Id int primary key identity(1,1),
 	[User] int foreign key references Users(Id),
 	Amount float,
 	Deposit_date datetime default getDate()
 )
-
+--u kry kodi ne VS
 create table Withdraws (
 	Id int primary key identity(1,1),
 	[User] int foreign key references Users(Id),
