@@ -1,143 +1,109 @@
 ﻿@page "/login-user"
 @inject NavigationManager NavigationManager
-
-
-<div class="login-container">
-    
-
-    <h3 class="login-title">Login of User</h3>
-  
-    <div class="login-form">
-        <div class="input-group">
-            <label>ID:</label>
-            <input type="text" @bind="ID" />
-        </div>
-        <div class="input-group">
-            <label>Password:</label>
-            <input type="password" @bind="password" />
-        </div>
-        <div class="button-group">
-            <button class="login-button" @onclick="HandleLogin">Login</button>
-            <button class="cancel-button" @onclick="NavigateToHome">Cancel</button>
-            <button class="register-button" @onclick="NavigateToRegister">Register</button>
-
-        </div>
-    </div>
-
-</div>
+@inject HttpClient httpClient
 
 
 
 <style>
- 
-    /* Stili për sfond */
-    .login-container {
-        text-align: center;
-        margin-top: 2.5%;
-        position: relative;
-        background-image: url('/Images/Image1.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: white;
-        padding: 20px;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Stili për titullin */
-    .login-title {
-        background-color: maroon;
-        color: white;
-        height: 9vh;
-        width: 100%;
+    .container {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
-        text-align: center;
-        margin: 0px;
-        padding: 0px;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f2f2f2;
     }
 
-    /* Stili për formën e login-it */
     .login-form {
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
-        padding: 50px;
-        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 20px;
         border-radius: 5px;
-        background-color: #f5f5f5;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 300px;
     }
 
-    /* Stili për input-et dhe button-et */
-    .input-group {
-        margin-bottom: 20px;
-        color: black;
-        text-align: left;
+    .form-group {
+        margin-bottom: 15px;
     }
 
-        .input-group label {
+        .form-group label {
             display: block;
-            margin-bottom: 7px;
+            margin-bottom: 5px;
+            font-weight: bold;
         }
 
-        .input-group input {
+        .form-group input {
             width: 100%;
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 3px;
         }
 
-    .button-group {
-        text-align: center;
+    .error-message {
+        color: red;
+        margin-top: 10px;
     }
 
-    .login-button, .cancel-button, .register-button {
-        padding: 10px 20px;
-        margin: 5px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
     }
 
-    .login-button {
-        background-color: maroon;
-        color: #fff;
-    }
+        .button-container button {
+            padding: 10px 20px;
+            background-color: maroon;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
 
-    .cancel-button {
-        background-color: #ccc;
-    }
+        .button-container a {
+            color: maroon;
+            text-decoration: none;
+        }
 
-    .register-button {
-        background-color: darkred;
-        color: #fff;
-    }
 </style>
-
-
+<div class="container">
+    <div class="login-form">
+        <h3>Login</h3>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input id="username" type="text" @bind="username" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input id="password" type="password" @bind="password" />
+        </div>
+        @if (showErrorMessage)
+        {
+            <p class="error-message">Invalid username or password.</p>
+        }
+        <div class="button-container">
+            <button onclick="Login">Login</button>
+            <a href="/signup">Signup</a>
+        </div>
+    </div>
+    <div class="image-container">
+        <img url="/Images/Images1.png" alt="Nature" />
+    </div>
+</div>
 @code {
-    private string ID;
+    private string username;
     private string password;
-
-    private async Task HandleLogin()
+    private bool showErrorMessage;
+    private async Task Login()
     {
-        NavigationManager.NavigateTo("/home-user");
-    }
-
-    private void NavigateToRegister()
-    {
-        NavigationManager.NavigateTo("/register");
-    }
-
-    private void NavigateToHome()
-    {
-
-        NavigationManager.NavigateTo("/");
-
+        
+        var response = await httpClient.GetAsync("https://localhost:7238/login?username=" + username + "&password=" + password);
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/home-user");
+        }
+        else
+        {
+            showErrorMessage = true;
+        }
     }
 }
-
-
-
