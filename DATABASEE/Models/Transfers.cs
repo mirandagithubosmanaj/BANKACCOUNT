@@ -23,6 +23,7 @@ namespace DATABASEE.Models
         [Required]
         public DateTime Transfer_date { get; set; }
 
+     // public virtual Users Sender_account { get; set; }
 
     }
 }
