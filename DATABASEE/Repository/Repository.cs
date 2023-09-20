@@ -44,7 +44,8 @@ namespace DATABASEE.Repository
 
         public IQueryable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().AsQueryable();
+
         }
 
         public Task SaveAsynk(CancellationToken token)

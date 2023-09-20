@@ -23,6 +23,7 @@ namespace DATABASEE.Models
         [Required]
         public string? Transfer_Date { get; set; }
 
+     // public virtual Users Sender_account { get; set; }
 
     }
 }

@@ -2,6 +2,8 @@
 using DATABASEE.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -11,25 +13,32 @@ namespace ACCOUNTINGAPI.Controller
     [ApiController]
     public class DepositsController : ControllerBase
     {
+        private readonly ILogger<DepositsController> _logger;
+
         private readonly IRepository<Deposits> _repository;
 
-        public DepositsController(IRepository<Deposits> repository)
+
+
+        public DepositsController(ILogger<DepositsController> logger, IRepository<Deposits> repository)
         {
             _repository = repository;
+
+            _logger = logger;
+
+
+
         }
 
         [HttpGet]
-        [Route("MerrDepositat/{Id}")]
-        public async Task<ActionResult<Deposits>> MerrDepositat(int id, CancellationToken token)
+        [Route("[action]/{Id}")]
+
+        public async Task<Deposits> MerrDepositen(int id, CancellationToken token)
+  
+        
+        
+        
         {
-            var deposit = await _repository.Get(id, token);
+            return await _repository.Get(id, token);
 
-            if (deposit == null)
-            {
-                return NotFound();
-            }
-
-            return deposit;
         }
-    }
-}
+}   }  

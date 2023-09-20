@@ -22,5 +22,9 @@ namespace DATABASEE.Models
         public string? Transfer_Date { get; set; }
 
 
+
+       
+
+
     }
 }
