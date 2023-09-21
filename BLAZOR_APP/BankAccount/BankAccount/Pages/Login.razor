@@ -1,0 +1,114 @@
+﻿@page "/login-user"
+@*@inject NavigationManager NavigationManager*@
+@*@inject HttpClient httpClient*@
+
+
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+    }
+
+    .login-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+    .error-message {
+        color: red;
+        margin-top: 10px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+        .button-container button {
+            padding: 10px 20px;
+            background-color: maroon;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .button-container a {
+            color: maroon;
+            text-decoration: none;
+        }
+
+</style>
+<div class="container">
+    <div class="login-form">
+        <h3>Login</h3>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input id="username" type="text" @bind="username" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input id="password" type="password" @bind="password" />
+        </div>
+        <div class="form-group">
+            <label for="user_role">UserRole:</label>
+            <input id="user_role" type="text" @bind="user_role" />
+        </div>
+        @if (showErrorMessage)
+        {
+            <p class="error-message">Invalid username or password.</p>
+        }
+        <div class="button-container">
+            <button onclick="Login">Login</button>
+            <a href="/signup">Signup</a>
+        </div>
+    </div>
+    <div class="image-container">
+        <img url="/Images/Images1.png" alt="Nature" />
+    </div>
+</div>
+@code {
+    private string username;
+    private string password;
+    private int user_role;
+    private bool showErrorMessage;
+    private async Task Loginn()
+    {
+        
+        /*var response = await httpClient.GetAsync("https://localhost:5233/login?username=" + username + "&password=" + password);
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/home-user");
+        }
+        else
+        {
+            showErrorMessage = true;
+        }*/
+    }
+}

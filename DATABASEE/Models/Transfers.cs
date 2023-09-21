@@ -11,17 +11,17 @@ namespace DATABASEE.Models
     public class Transfers : BaseModels
     {
 
-        [ForeignKey("Users/Account_Number")]
-        public string? Sender_Account { get; set; }
+        [ForeignKey("Users/ Id")]
+        public int Sender_account { get; set; }
 
-        [ForeignKey("Users/ Account_Number")]
-        public string? Receiver_Account { get; set; }
-
-        [Required]
-        public string? Amount { get; set;}
+        [ForeignKey("User/ Id")]
+        public int Receiver_account { get; set; }
 
         [Required]
-        public string? Transfer_Date { get; set; }
+        public double Amount { get; set;}
+
+        [Required]
+        public DateTime Transfer_date { get; set; }
 
      // public virtual Users Sender_account { get; set; }
 

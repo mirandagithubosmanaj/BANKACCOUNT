@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8EJDtCt3+9L6NGGqpaud8W97wsDnFS/bKWTtPeTxw/JfThp25UDexvZJlJX64cxlWOcQBvBzhEdZsMXiYkKJSA==",
+  "dgSpecHash": "w46hcsERi47RE68K+lQMDgObcu4CksMZjnzG5HQ3SDCWzTZzAtpzNatOI/l/CuLoBJGiY4GERtlboOdj0alphQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IsoCom\\Desktop\\ACCOUNTINGAPI\\ACCOUNTINGAPI.csproj",
+  "projectFilePath": "C:\\Users\\IsoCom\\Documents\\GitHub\\BANKACCOUNT\\ACCOUNTINGAPI\\ACCOUNTINGAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IsoCom\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\IsoCom\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -42,8 +42,9 @@
     "C:\\Users\\IsoCom\\.nuget\\packages\\nlog.extensions.logging\\5.3.4\\nlog.extensions.logging.5.3.4.nupkg.sha512",
     "C:\\Users\\IsoCom\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.4\\nlog.web.aspnetcore.5.3.4.nupkg.sha512",
     "C:\\Users\\IsoCom\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "C:\\Users\\IsoCom\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "C:\\Users\\IsoCom\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\IsoCom\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.5.0\\swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
+    "C:\\Users\\IsoCom\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\IsoCom\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\IsoCom\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "C:\\Users\\IsoCom\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\IsoCom\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

@@ -17,28 +17,37 @@ namespace ACCOUNTINGAPI.Controller
 
         private readonly IRepository<Deposits> _repository;
 
-
-
         public DepositsController(ILogger<DepositsController> logger, IRepository<Deposits> repository)
         {
             _repository = repository;
 
             _logger = logger;
-
-
-
         }
 
-        [HttpGet]
-        [Route("[action]/{Id}")]
-
-        public async Task<Deposits> MerrDepositen(int id, CancellationToken token)
-  
-        
-        
-        
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetDepositsById(int Id, CancellationToken token)
         {
-            return await _repository.Get(id, token);
+            Deposits depositsData = await _repository.Get(Id, token);
 
+            if (depositsData == null)
+
+            {
+
+                return NotFound();
+            }
+
+
+            return Ok(depositsData);
         }
-}   }  
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> CreateDeposits(Deposits newDeposits)
+        {
+            await _repository.Add(newDeposits);
+            return Ok(newDeposits);
+        }
+
+    }
+}  

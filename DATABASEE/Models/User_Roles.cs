@@ -8,13 +8,10 @@ using System.Threading.Tasks;
 
 namespace DATABASEE.Models
 {
-    public class User_Roles: BaseModels
+    public class User_roles: BaseModels
     {
+        
         [Required]
-        public string Role_Id { get; set; }
-
-
-        [Required]
-        public string Role_Name { get; set; }
+        public string Role_name { get; set; }
     }
 }

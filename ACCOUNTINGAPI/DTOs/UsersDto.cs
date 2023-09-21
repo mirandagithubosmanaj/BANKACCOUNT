@@ -18,24 +18,5 @@ namespace ACCOUNTINGAPI.DTOs
         
         public string Balance { get; set; }
 
-        
-     
-
-
-       
-        
-
-        // public virtual IEnumerable<Withdraws> Withdrawsat { get; set; }
-
-
-
-
-
-
-
-
-
-
-
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DATABASEE.Models;
+using DATABASEE.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -10,23 +11,22 @@ namespace ACCOUNTINGAPI.Controller
     [ApiController]
     public class WithdrawsController : ControllerBase
     {
-        private List<Withdraws> withdrawalsList = new List<Withdraws>();
+        private readonly ILogger<WithdrawsController> _logger;
 
-        public WithdrawsController()
+        private readonly IRepository<Withdraws> _repository;
 
+        public WithdrawsController(ILogger<WithdrawsController> logger, IRepository<Withdraws> repository)
         {
-            withdrawalsList.Add(new Withdraws { Id = 1, User = 1, Amount = 222, Withdraw_date = DateTime.Now });
+            _repository = repository;
+
+            _logger = logger;
+        }
 
 
-
-            }
-
-        [HttpGet("{id}")]
-        [SwaggerOperation(Summary = "Get a withdrawal by ID")]
-        [ProducesResponseType(typeof(Withdraws), 200)]
-        public IActionResult GetWithdrawById(int id)
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetWithdrawById(int Id, CancellationToken token)
         {
-            Withdraws withdrawsData = GetWithdrawsDataById(id);
+            Withdraws withdrawsData = await _repository.Get(Id, token);
 
             if  (withdrawsData == null)
 
@@ -39,30 +39,16 @@ namespace ACCOUNTINGAPI.Controller
             return Ok(withdrawsData);
         }
 
-        private Withdraws  GetWithdrawsDataById(int id)
-
-        {
-            var  withdraws=withdrawalsList.FirstOrDefault(Withdraws => Withdraws.Id == id);
-
-
-            return withdraws;
-        }
-
-
 
 
         [HttpPost]
-        [SwaggerOperation(Summary = "Create a new withdrawal")]
-        [ProducesResponseType(typeof(Withdraws), 201)]
-        public IActionResult CreateWithdraw([FromBody] Withdraws newWithdraw)
+        public async Task<IActionResult> CreateWithdraw(Withdraws newWithdraw)
         {
-            // Krijoni logjikën për të krijuar një tërheqje të re
-            // ...
-
-            return CreatedAtAction(nameof(GetWithdrawById), new { id = newWithdraw.Id }, newWithdraw);
+            await _repository.Add(newWithdraw);
+            return Ok(newWithdraw);
         }
 
-        // Shtoni metoda të tjera të ngjashme dhe anotime të Swagger sipas nevojës
+
     }
 
 
