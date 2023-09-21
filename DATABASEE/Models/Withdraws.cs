@@ -16,14 +16,10 @@ namespace DATABASEE.Models
         public int User { get; set; }
 
         [Required]
-        public double Amount { get; set; }
+        public float Amount { get; set; }
 
         [Required]
         public DateTime Withdraw_date { get; set; }
-
-
-
-       
 
 
     }

@@ -17,10 +17,10 @@ namespace DATABASEE.Models
         public int Pin { get; set; }
 
         [Required]
-        public int Account_number { get; set; }
+        public int Account_Number { get; set; }
 
         [Required]
-        public double Balance { get; set; }
+        public float Balance { get; set; }
 
         [ForeignKey("User_roles/ Id")]
         public int User_role { get; set; }

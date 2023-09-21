@@ -10,7 +10,10 @@ namespace DATABASEE.Models
 {
     public class User_roles: BaseModels
     {
-        
+        [Required]
+        public int Id { get; set; }
+
+
         [Required]
         public string Role_name { get; set; }
     }

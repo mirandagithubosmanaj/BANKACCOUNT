@@ -36,10 +36,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajete/Downloads/AccountingApplication-main/BANKACCOUNT/BLAZOR_APP/BankAccount/BankAccount/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ajete/Downloads/AccountingApplication-main/BANKACCOUNT/BLAZOR_APP/BankAccount/BankAccount/Pages/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVkaXJlY3RUb0xvZ2luLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ajete/Downloads/AccountingApplication-main/BANKACCOUNT/BLAZOR_APP/BankAccount/BankAccount/Pages/User/HomeUser.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxIb21lVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajete/Downloads/AccountingApplication-main/BANKACCOUNT/BLAZOR_APP/BankAccount/BankAccount/Pages/User/LoginUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxMb2dpblVzZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ajete/Downloads/AccountingApplication-main/BANKACCOUNT/BLAZOR_APP/BankAccount/BankAccount/Pages/Withdraw.razor]
@@ -66,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope = b-7nc3lralqp
 
 [C:/Users/ajete/Downloads/AccountingApplication-main/BANKACCOUNT/BLAZOR_APP/BankAccount/BankAccount/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajete/Downloads/AccountingApplication-main/BANKACCOUNT/BLAZOR_APP/BankAccount/BankAccount/Pages/User/LoginUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxMb2dpblVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ajete/Downloads/AccountingApplication-main/BANKACCOUNT/BLAZOR_APP/BankAccount/BankAccount/Pages/_Host.cshtml]

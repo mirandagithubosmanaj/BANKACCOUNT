@@ -18,12 +18,11 @@ namespace DATABASEE.Models
         public int Receiver_account { get; set; }
 
         [Required]
-        public double Amount { get; set;}
+        public float Amount { get; set;}
 
         [Required]
         public DateTime Transfer_date { get; set; }
 
-     // public virtual Users Sender_account { get; set; }
 
     }
 }
