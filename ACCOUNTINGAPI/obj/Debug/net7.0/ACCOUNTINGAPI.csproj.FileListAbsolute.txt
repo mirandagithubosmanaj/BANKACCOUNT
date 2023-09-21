@@ -148,3 +148,4 @@ C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\ACCOUNTINGAPI\ob
 C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\ACCOUNTINGAPI\obj\Debug\net7.0\ACCOUNTINGAPI.pdb
 C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\ACCOUNTINGAPI\obj\Debug\net7.0\ACCOUNTINGAPI.genruntimeconfig.cache
 C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\ACCOUNTINGAPI\obj\Debug\net7.0\ref\ACCOUNTINGAPI.dll
+C:\Users\ajete\Downloads\AccountingApplication-main\BANKACCOUNT\ACCOUNTINGAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.Annotations.dll

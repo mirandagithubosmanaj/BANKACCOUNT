@@ -7,15 +7,31 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <Compile Remove="Data\**" />
+    <Content Remove="Data\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <None Remove="Data\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\User\TransferUser.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\User\TransferUser.razor" />
     <None Include="wwwroot\Images\Home.png" />
     <None Include="wwwroot\Images\Image1.png" />
     <None Include="wwwroot\Images\Deposite.png" />
     <None Include="wwwroot\Images\Image4.png" />
     <None Include="wwwroot\Images\Withdraw.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\User\TransferUser.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\User\TransferUser.razor" />
   </ItemGroup>
 
 </Project>

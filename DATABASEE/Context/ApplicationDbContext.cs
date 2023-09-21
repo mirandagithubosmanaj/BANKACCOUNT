@@ -25,9 +25,9 @@ namespace DATABASEE.Context
         
 
             modelBuilder.Entity<Deposits>();
-            modelBuilder.Entity<Transfer>();
-            modelBuilder.Entity<User>();
-            modelBuilder.Entity<UserRoles>();
+            modelBuilder.Entity<Transfers>();
+            modelBuilder.Entity<Users>();
+            modelBuilder.Entity<User_roles>();
             modelBuilder.Entity<Withdraws>();
 
 

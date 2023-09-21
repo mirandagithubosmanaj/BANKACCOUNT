@@ -12,14 +12,18 @@ namespace DATABASEE.Models
     {
 
 
-        [ForeignKey("Users/User_Id")]
-        public string? User_Id { get; set; }
+        [ForeignKey("Users/ Id")]
+        public int User { get; set; }
 
         [Required]
-        public string? Amount { get; set; }
+        public double Amount { get; set; }
 
         [Required]
-        public string? Transfer_Date { get; set; }
+        public DateTime Withdraw_date { get; set; }
+
+
+
+       
 
 
     }

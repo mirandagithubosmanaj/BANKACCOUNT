@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Tv7NZLmCV3mcS9jFOAhlQp0ryqX6koP9oEoB4CluvQGg7kDWgTHWmZx/HjdQJWAD3c20TTh46zOKsERl6t39xQ==",
+  "dgSpecHash": "sjJfp0nT+ime79bNYMJhgaQUbf9lVQBTJGLRbpnTzgs6Qfc6frXxw0zhntwaADaVaU5zZgyvrnlWOE2J0tErGw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ajete\\Downloads\\AccountingApplication-main\\BANKACCOUNT\\ACCOUNTINGAPI\\ACCOUNTINGAPI.csproj",
   "expectedPackageFiles": [
@@ -42,8 +42,9 @@
     "C:\\Users\\ajete\\.nuget\\packages\\nlog.extensions.logging\\5.3.4\\nlog.extensions.logging.5.3.4.nupkg.sha512",
     "C:\\Users\\ajete\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.4\\nlog.web.aspnetcore.5.3.4.nupkg.sha512",
     "C:\\Users\\ajete\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "C:\\Users\\ajete\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "C:\\Users\\ajete\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\ajete\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.5.0\\swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
+    "C:\\Users\\ajete\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\ajete\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\ajete\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "C:\\Users\\ajete\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\ajete\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

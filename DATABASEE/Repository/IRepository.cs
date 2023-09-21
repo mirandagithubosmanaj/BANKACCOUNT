@@ -13,7 +13,7 @@ namespace DATABASEE.Repository
         Task<T?> Get(int id, CancellationToken token);
 
         IQueryable<T> GetAll();
-        void Add(T entity);
+        Task<T> Add(T entity);
 
         void Update(T entity);
 

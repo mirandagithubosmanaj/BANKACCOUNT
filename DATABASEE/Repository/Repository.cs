@@ -22,14 +22,14 @@ namespace DATABASEE.Repository
 
         }
 
-
-
-
-
-
-        public void Add(T entity)
+        public async Task<T> Add(T entity)
         {
-            throw new NotImplementedException();
+
+            _context.Set<T>().Add(entity);
+
+            await _context.SaveChangesAsync();
+
+            return entity;
         }
 
         public Task Delete(int id, CancellationToken token)
@@ -44,7 +44,8 @@ namespace DATABASEE.Repository
 
         public IQueryable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().AsQueryable();
+
         }
 
         public Task SaveAsynk(CancellationToken token)

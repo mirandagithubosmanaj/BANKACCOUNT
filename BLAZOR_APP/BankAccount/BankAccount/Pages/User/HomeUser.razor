@@ -1,18 +1,19 @@
-﻿@page "/home-user"
+﻿@page "/transfer-user"
 
 
 
 <body class="home-container">
     <div class="headerDiv fixed-top">
-        <h4><NavLink href="/" class="menu-link">Home</NavLink></h4>
-        <h4><NavLink href="/transfer" class="menu-link">Transfer</NavLink></h4>
-        <h4><NavLink href="/deposite" class="menu-link">Deposite</NavLink></h4>
-        <h4><NavLink href="/withdraw" class="menu-link">Withdraw</NavLink></h4>
+        <h4><NavLink href="/home-user" class="menu-link">Home</NavLink></h4>
+        <h4><NavLink href="/transfer-user" class="menu-link">Transfer</NavLink></h4>
+        <h4><NavLink href="/deposite-user" class="menu-link">Deposite</NavLink></h4>
+        <h4><NavLink href="/withdraw-user" class="menu-link">Withdraw</NavLink></h4>
         <h4><NavLink href="/logout" class="menu-link">Logout</NavLink></h4>
-     </div>
+    </div>
 
-    <h1>Welcome to Your Bank Account</h1>
     <p><span class="bank-name">AME</span></p>
+    <h1>Welcome to Your Bank Account</h1>
+    
     <p><span class="paragraph">Manage your finances and transactions with ease.</span></p>
 </body>
 
@@ -24,7 +25,7 @@
         text-decoration: none;
     }
 
- 
+
 
     .hearderDiv menu-link {
         cursor: pointer;
@@ -32,9 +33,9 @@
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-        .headerDiv h4:hover, .headerDiv h4.focus {
-            color: rgb(255, 200, 200)
-        }
+    .headerDiv h4:hover, .headerDiv h4.focus {
+        color: rgb(255, 200, 200)
+    }
 
 
     .headerDiv {
